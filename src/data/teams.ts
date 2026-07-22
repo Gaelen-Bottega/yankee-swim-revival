@@ -8,7 +8,7 @@ export type Team = {
 
 export const TEAMS: Team[] = [
   { slug: "bristol-splash", name: "Bristol Splash", town: "Bristol, CT", mascot: "Splash", colors: ["#0055B8", "#FFFFFF"] },
-  { slug: "madison-marlins", name: "Madison Marlins", town: "Madison, CT", mascot: "Marlin", colors: ["#001F5B", "#FFC72C"] },
+  { slug: "madison-marlins", name: "JCC Blue Marlins", town: "Woodbridge, CT", mascot: "Marlin", colors: ["#001F5B", "#ffffff"] },
   { slug: "naugatuck-thunderfish", name: "Naugatuck Thunderfish", town: "Naugatuck, CT", mascot: "Thunderfish", colors: ["#0B2545", "#E63946"] },
   { slug: "new-milford-barracudas", name: "New Milford Barracudas", town: "New Milford, CT", mascot: "Barracuda", colors: ["#005B41", "#FFFFFF"] },
   { slug: "newtown-torpedoes", name: "Newtown Torpedoes", town: "Newtown, CT", mascot: "Torpedo", colors: ["#001F5B", "#C0C0C0"] },

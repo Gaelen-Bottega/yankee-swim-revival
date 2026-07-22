@@ -103,8 +103,8 @@ function HomePage() {
           <div className="flex flex-wrap items-end justify-between gap-4">
             <SectionHeading
               eyebrow="The League"
-              title="Eleven clubs. One league."
-              description="Teams span the state of Connecticut, from Bristol to West Haven."
+              title="Six clubs. One league."
+              description="Teams span the state of Connecticut."
             />
             <Link
               to="/teams"
