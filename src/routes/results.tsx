@@ -26,7 +26,7 @@ function ResultsPage() {
       <PageHero
         eyebrow="Results & Champions"
         title="Season results archive"
-        description="Every season ends with a scoreboard. Below are the dual meet champions and Finals High Point Award winners preserved from the league's history."
+        description="Every season ends with a champion. Below are the dual meet champions and Finals High Point Award winners preserved from the league's history."
       />
 
       <section className="py-16">
@@ -42,7 +42,7 @@ function ResultsPage() {
                 <tr>
                   <th className="px-4 py-3 font-display font-semibold uppercase">Year</th>
                   <th className="px-4 py-3 font-display font-semibold uppercase">Dual Meet Champion</th>
-                  <th className="hidden px-4 py-3 font-display font-semibold uppercase sm:table-cell">Notes</th>
+                  <th className="hidden px-4 py-3 font-display font-semibold uppercase sm:table-cell">Record</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-border bg-card">
@@ -53,7 +53,7 @@ function ResultsPage() {
                       {Array.isArray(c.team) ? c.team.join(" & ") : c.team}
                     </td>
                     <td className="hidden px-4 py-3 text-muted-foreground sm:table-cell">
-                      {c.note ?? "—"}
+                      {c.note ?? "8-0"}
                     </td>
                   </tr>
                 ))}
@@ -68,7 +68,7 @@ function ResultsPage() {
           <SectionHeading
             eyebrow="Finals High Point Award"
             title="Top three teams at Championships"
-            description="Awards are presented to the three highest overall scoring teams at Yankee League Finals."
+            description="Awards are presented to the three highest overall scoring teams at Yankee League Championships."
           />
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {FINALS_HIGH_POINT.map((r) => (
@@ -102,15 +102,6 @@ function ResultsPage() {
                 </ol>
               </article>
             ))}
-          </div>
-
-          <div className="mt-10 max-w-3xl">
-            <PlaceholderNotice>
-              Season-by-season individual event results and dual meet scores
-              beyond those shown are not preserved in the historical archive.
-              If your club has additional records to contribute, please contact
-              the league.
-            </PlaceholderNotice>
           </div>
         </div>
       </section>

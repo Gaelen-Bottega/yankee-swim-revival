@@ -18,7 +18,7 @@ export const NAV: NavItem[] = [
   { label: "Schedule", to: "/schedule" },
   { label: "Results", to: "/results" },
   { label: "Records", to: "/records" },
-  { label: "Registration", to: "/registration" },
+  // { label: "Registration", to: "/registration" },
   { label: "Documents", to: "/documents" },
   { label: "Contact", to: "/contact" },
 ];
