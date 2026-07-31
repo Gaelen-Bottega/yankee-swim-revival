@@ -25,14 +25,24 @@ function TeamsPage() {
       <PageHero
         eyebrow="Member Clubs"
         title="Meet the Yankee League teams"
-        description="Eleven Connecticut communities compete each season in the Yankee Swim League."
+        description="Seven Connecticut communities compete each season in the Yankee Swim League."
       />
 
       <section className="py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-8 rounded-md border border-border bg-muted/50 p-4 text-center text-sm text-muted-foreground">
+            Click on a team below to visit their website and learn more about their
+            program, coaches, facilities, and upcoming events.
+          </div>
           <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {TEAMS.map((t) => (
-              <li key={t.slug}>
+            <li key={t.slug}>
+              <a
+                href={t.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block h-full"
+              >
                 <article className="group relative flex h-full flex-col overflow-hidden rounded-md border border-border bg-card transition-shadow hover:shadow-lg">
                   <div
                     className="h-24 w-full"
@@ -46,38 +56,12 @@ function TeamsPage() {
                     <h2 className="mt-2 font-display text-2xl font-bold uppercase leading-tight text-foreground group-hover:text-primary">
                       {t.name}
                     </h2>
-                    <dl className="mt-4 space-y-1 text-sm text-muted-foreground">
-                      <div>
-                        <dt className="inline text-foreground/60">Mascot: </dt>
-                        <dd className="inline">{t.mascot}</dd>
-                      </div>
-                      <div>
-                        <dt className="inline text-foreground/60">Colors: </dt>
-                        <dd className="inline-flex items-center gap-1 align-middle">
-                          <span
-                            className="inline-block h-3 w-3 rounded-full border border-border"
-                            style={{ background: t.colors[0] }}
-                          />
-                          <span
-                            className="inline-block h-3 w-3 rounded-full border border-border"
-                            style={{ background: t.colors[1] }}
-                          />
-                        </dd>
-                      </div>
-                    </dl>
                   </div>
                 </article>
-              </li>
+              </a>
+            </li>
             ))}
           </ul>
-
-          <div className="mt-10 max-w-3xl">
-            <PlaceholderNotice>
-              Coach names, contact details, and team-specific pool venues were
-              not fully preserved in the historical archive. Contact the league
-              office for the current roster of head coaches and home venues.
-            </PlaceholderNotice>
-          </div>
         </div>
       </section>
     </>

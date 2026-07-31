@@ -78,9 +78,9 @@ function HomePage() {
         <div className="mx-auto grid max-w-7xl grid-cols-2 gap-px overflow-hidden bg-border sm:grid-cols-4">
           {[
             { icon: Users, label: "Member Clubs", value: `${LEAGUE.teamsCount}` },
-            { icon: Waves, label: "Season", value: "Nov – Mar" },
+            { icon: Waves, label: "Season", value: "Nov – Feb" },
             { icon: Trophy, label: "History", value: `${LEAGUE.seasons} yrs` },
-            { icon: Calendar, label: "Postseason", value: "3 weeks" },
+            { icon: Calendar, label: "Postseason", value: "2 weeks" },
           ].map(({ icon: Icon, label, value }) => (
             <div key={label} className="flex items-center gap-4 bg-background p-6">
               <span className="grid h-11 w-11 shrink-0 place-items-center rounded-md bg-primary text-primary-foreground">
@@ -103,7 +103,7 @@ function HomePage() {
           <div className="flex flex-wrap items-end justify-between gap-4">
             <SectionHeading
               eyebrow="The League"
-              title="Six clubs. One league."
+              title="Seven clubs. One league."
               description="Teams span the state of Connecticut."
             />
             <Link
@@ -141,11 +141,10 @@ function HomePage() {
             <div>
               <p className="eyebrow text-accent">Recent Champions</p>
               <h2 className="mt-2 font-display text-3xl font-bold uppercase sm:text-4xl">
-                Every season ends with a scoreboard.
+                Every season ends with a champion.
               </h2>
               <p className="mt-4 max-w-xl text-primary-foreground/80">
-                The dual meet season crowns a champion, then the postseason —
-                Trials, Finals, and All Stars — decides the High Point Award.
+                The Yankee League Championship meet in February crowns a champion against the rest.
               </p>
               <Link
                 to="/results"

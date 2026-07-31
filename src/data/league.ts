@@ -3,7 +3,7 @@ export const LEAGUE = {
   short: "YSL",
   tagline: "Competition. Camaraderie. Excellence.",
   region: "Connecticut",
-  teamsCount: 11,
+  teamsCount: 7,
   seasons: "40+",
   description:
     "The Yankee Swim League is comprised of teams located throughout the state of Connecticut, with a proud history spanning more than three decades of youth competitive swimming.",
