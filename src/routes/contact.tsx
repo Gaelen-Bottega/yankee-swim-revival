@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { PageHero, SectionHeading, PlaceholderNotice } from "@/components/section";
+import { PageHero, SectionHeading} from "@/components/section";
 import { OFFICERS } from "@/data/officers";
 import { Mail, MapPin, Users } from "lucide-react";
 
@@ -88,24 +88,6 @@ function ContactPage() {
                     </span>
                   </a>
                 ) : null}
-                <div className="flex items-start gap-3 rounded-md border border-border bg-card p-4">
-                  <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-secondary" />
-                  <span className="text-muted-foreground">
-                    Serving Connecticut communities from Bristol to West Haven.
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <SectionHeading eyebrow="Note" title="About this page" />
-              <div className="mt-6">
-                <PlaceholderNotice>
-                  Contact information reflects the most recent board captured
-                  in the historical archive. Present-day officers and email
-                  addresses may differ — please verify with your local club
-                  before sending time-sensitive requests.
-                </PlaceholderNotice>
               </div>
             </div>
           </div>

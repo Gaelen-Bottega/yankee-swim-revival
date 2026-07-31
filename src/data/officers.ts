@@ -1,10 +1,9 @@
-// Board of directors, most recently confirmed from the 2012–2013 season.
-// Present-day board information is not available in the historical archive.
+// Board of directors, most recently confirmed from the 2026 season.
 export const OFFICERS: { role: string; name: string; team: string; email?: string }[] = [
-  { role: "President", name: "Kevin Dawiczyk", team: "Bristol", email: "splashcoach@gmail.com" },
-  { role: "Vice President", name: "Mary Race", team: "Watertown" },
-  { role: "Treasurer", name: "Dave Heller", team: "Naugatuck" },
-  { role: "Secretary", name: "Kim Crowley", team: "Plainville" },
+  { role: "President", name: "Gaelen Rhoads", team: "Woodbridge", email: "gaelenr@jccnh.org" },
+  { role: "Vice President", name: "Tom Currier", team: "Watertown", email: "currierswimming@hotmail.com" },
+  { role: "Treasurer", name: "Dave Heller", team: "N/A" },
+  { role: "Secretary", name: "Patrick Marchand", team: "Litchfield", email: "patrick@campmohawk.org" },
 ];
 
 export const OFFICERS_NOTE =
