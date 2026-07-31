@@ -47,7 +47,7 @@ export function SiteFooter() {
             </div>
             <div>
               <dt className="inline text-primary-foreground/60">Season: </dt>
-              <dd className="inline">November – March</dd>
+              <dd className="inline">November – February</dd>
             </div>
           </dl>
         </div>

@@ -194,10 +194,10 @@ function HomePage() {
               </div>
               <div className="flex flex-wrap gap-3 sm:shrink-0">
                 <Link
-                  to="/registration"
+                  to="/teams"
                   className="inline-flex items-center justify-center rounded-md bg-primary px-5 py-3 text-sm font-semibold uppercase tracking-wide text-primary-foreground hover:bg-secondary"
                 >
-                  Registration info
+                  Teams
                 </Link>
                 <Link
                   to="/contact"
