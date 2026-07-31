@@ -9,7 +9,7 @@ export const Route = createFileRoute("/schedule")({
       {
         name: "description",
         content:
-          "Yankee Swim League season schedule — dual meets from November through February, plus the three-week postseason of Trials, Finals, and All Stars.",
+          "Yankee Swim League season schedule — dual meets from November through February, plus the two-week postseason of Finals and All Stars.",
       },
       { property: "og:title", content: "YSL Season Schedule" },
       { property: "og:url", content: "/schedule" },
@@ -27,7 +27,7 @@ function SchedulePage() {
       <PageHero
         eyebrow="Season Schedule"
         title="Dual meets & postseason"
-        description="The Yankee Swim League dual meet season runs November through February. Each team swims every other team, producing a seven-meet schedule. The postseason unfolds over three consecutive weeks."
+        description="The Yankee Swim League dual meet season runs November through February. Each team swims every other team at least once, producing the meet schedule. The postseason unfolds over two consecutive weeks."
       />
 
       <section className="py-16">
@@ -39,23 +39,34 @@ function SchedulePage() {
                 <h3 className="font-display text-xl font-bold uppercase text-primary">
                   {week}
                 </h3>
-                <div className="mt-3 overflow-hidden rounded-md border border-border">
-                  <table className="w-full text-left text-sm">
+                <div className="mt-3 overflow-x-auto rounded-md border border-border">
+                  <table className="w-full text-left text-sm sm:table-fixed">
                     <thead className="bg-primary text-primary-foreground">
                       <tr>
-                        <th className="px-4 py-3 font-display font-semibold uppercase">Date</th>
-                        <th className="px-4 py-3 font-display font-semibold uppercase">Home</th>
-                        <th className="px-4 py-3 font-display font-semibold uppercase">Away</th>
-                        <th className="hidden px-4 py-3 font-display font-semibold uppercase sm:table-cell">Venue</th>
+                        <th className="w-[18%] px-4 py-3">Date</th>
+                        <th className="w-[27%] px-4 py-3">Home</th>
+                        <th className="w-[27%] px-4 py-3">Away</th>
+                        <th className="hidden w-[28%] px-4 py-3 sm:table-cell">Venue</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-border bg-card">
                       {SCHEDULE.filter((m) => m.week === week).map((m, i) => (
                         <tr key={i} className="odd:bg-muted/40">
-                          <td className="px-4 py-3 font-medium text-foreground">{m.date}</td>
-                          <td className="px-4 py-3 text-foreground">{m.home}</td>
-                          <td className="px-4 py-3 text-muted-foreground">{m.away}</td>
-                          <td className="hidden px-4 py-3 text-muted-foreground sm:table-cell">{m.venue}</td>
+                          <td className="px-2 py-3 text-xs font-medium text-foreground break-words sm:px-4 sm:text-sm">
+                            {m.date}
+                          </td>
+
+                          <td className="px-2 py-3 text-xs text-foreground sm:px-4 sm:text-sm">
+                            <span className="block leading-tight">{m.home}</span>
+                          </td>
+
+                          <td className="px-2 py-3 text-xs text-muted-foreground sm:px-4 sm:text-sm">
+                            <span className="block leading-tight">{m.away}</span>
+                          </td>
+
+                          <td className="hidden px-4 py-3 text-muted-foreground sm:table-cell">
+                            {m.venue}
+                          </td>
                         </tr>
                       ))}
                     </tbody>
@@ -64,14 +75,6 @@ function SchedulePage() {
               </div>
             ))}
           </div>
-
-          <div className="mt-10">
-            <PlaceholderNotice>
-              Dates, matchups, and venues shown are a representative sample.
-              Actual pairings for each season are set by coaches at the
-              September Meeting.
-            </PlaceholderNotice>
-          </div>
         </div>
       </section>
 
@@ -79,8 +82,8 @@ function SchedulePage() {
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="Postseason"
-            title="Three weeks. Nine teams. One champion."
-            description="Yankee League Trials, Finals, and All Stars unfold over three consecutive weeks — the culmination of every swimmer's season."
+            title="Two weeks. Seven teams. One champion."
+            description="Yankee League Championships and All Stars unfold over two consecutive weeks — the culmination of every swimmer's season."
           />
           <div className="mt-8 grid gap-4 md:grid-cols-3">
             {POSTSEASON.map((p) => (

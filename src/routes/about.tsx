@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { PageHero, SectionHeading, PlaceholderNotice } from "@/components/section";
+import { PageHero, SectionHeading } from "@/components/section";
 import { OFFICERS, OFFICERS_NOTE } from "@/data/officers";
 import { LEAGUE } from "@/data/league";
 
@@ -89,13 +89,6 @@ function AboutPage() {
                 ) : null}
               </article>
             ))}
-          </div>
-          <div className="mt-8">
-            <PlaceholderNotice>
-              Officer roster shown reflects the most recent board captured in
-              the historical archive (2012–2013 season). Present-day officers
-              may differ — contact the league to confirm.
-            </PlaceholderNotice>
           </div>
         </div>
       </section>
