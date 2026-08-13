@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Calendar, Trophy, Users, Waves } from "lucide-react";
-import heroImg from "@/assets/hero-pool.jpg";
+import heroImg from "@/assets/sean-wizards.jpg";
 import { LEAGUE } from "@/data/league";
 import { TEAMS } from "@/data/teams";
 import { FINALS_HIGH_POINT, DUAL_MEET_CHAMPIONS } from "@/data/champions";
@@ -36,7 +36,7 @@ function HomePage() {
           alt="Competitive swimmer racing through a pool lane"
           width={1920}
           height={1080}
-          className="absolute inset-0 h-full w-full object-cover opacity-45"
+          className="absolute inset-0 h-full w-full object-cover object-[center_50%] opacity-45"
         />
         <div
           aria-hidden
