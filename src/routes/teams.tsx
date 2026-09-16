@@ -41,7 +41,7 @@ function TeamsPage() {
                 href={t.website}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block h-full"
+                className="group relative flex h-full flex-col overflow-hidden rounded-md border border-border bg-card transition-all hover:-translate-y-1 hover:shadow-lg"
               >
                 <article className="group relative flex h-full flex-col overflow-hidden rounded-md border border-border bg-card transition-shadow hover:shadow-lg">
                   <div

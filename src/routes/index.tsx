@@ -103,7 +103,7 @@ function HomePage() {
           <div className="flex flex-wrap items-end justify-between gap-4">
             <SectionHeading
               eyebrow="The League"
-              title="Seven clubs. One league."
+              title="Ten clubs. One league."
               description="Teams span the state of Connecticut."
             />
             <Link
@@ -115,19 +115,24 @@ function HomePage() {
           </div>
           <ul className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
             {TEAMS.map((t) => (
-              <li
-                key={t.slug}
-                className="group relative overflow-hidden rounded-md border border-border bg-card p-4 transition-colors hover:border-secondary"
-              >
-                <span
-                  aria-hidden
-                  className="absolute inset-y-0 left-0 w-1"
-                  style={{ background: t.colors[0] }}
-                />
-                <p className="eyebrow text-muted-foreground">{t.town}</p>
-                <p className="mt-1 font-display text-lg font-bold leading-tight text-foreground group-hover:text-primary">
-                  {t.name}
-                </p>
+              <li key={t.slug}>
+                <a
+                href={t.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative block overflow-hidden rounded-md border border-border bg-card p-4 transition-all hover:-translate-y-0.5 hover:border-secondary hover:shadow-md">
+                  <span
+                    aria-hidden
+                    className="absolute inset-y-0 left-0 w-1"
+                    style={{ background: t.colors[0] }}
+                  />
+
+                  <p className="eyebrow text-muted-foreground">{t.town}</p>
+
+                  <p className="mt-1 font-display text-lg font-bold leading-tight text-foreground group-hover:text-primary">
+                    {t.name}
+                  </p>
+                </a>
               </li>
             ))}
           </ul>

@@ -56,4 +56,25 @@ export const TEAMS: Team[] = [
     colors: ["#0b9444", "#000000"],
     website: "https://www.facebook.com/p/Litchfield-Swim-Team-100051750221788/",
   },
+  {
+    slug: "madison-racquet-swim-club",
+    name: "Madison Racquet & Swim Club",
+    town: "Madison, CT",
+    colors: ["#eae614", "#0078bf"],
+    website: "https://madisonracquet.com/",
+  },
+  {
+    slug: "new-milford-barracudas",
+    name: "New Milford Barracuda's",
+    town: "New Milford, CT",
+    colors: ["#40af47", "#080405"],
+    website: "https://www.facebook.com/NMFitnessAquatics/",
+  },
+  {
+    slug: "plainville-swim-club",
+    name: "Plainville Swim Club",
+    town: "Plainville, CT",
+    colors: ["#1f00f7", "#fefefe"],
+    website: "https://www.plainvillect.com/recreation-department/pages/aquatic-programs",
+  },
 ];
