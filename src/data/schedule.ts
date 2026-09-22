@@ -8,7 +8,7 @@ export type Meet = {
 
 export const SCHEDULE: Meet[] = [
   { date: "Sat, Nov 7", warmup: "9:00 AM", home: "New Milford Barracuda's", away: ["Newtown Torpedoes", "Madison Racquet & Swim Club"], venue: "Higgins Aquatic Center" },
-  { date: "Sat, Nov 7", warmup: "TBD", home: "Watertown Warriors", away: "JCC Blue Marlins", venue: "Watertown HS Natatorium" },
+  { date: "Sat, Nov 7", warmup: "8:00 AM", home: "Watertown Warriors", away: "JCC Blue Marlins", venue: "Watertown HS Natatorium" },
   { date: "Sat, Nov 21", warmup: "9:00 AM", home: "New Milford Barracuda's", away: "Litchfield Area Swim Team", venue: "Higgins Aquatic Center" },
   { date: "Sat, Nov 21", warmup: "1:30 PM", home: "Bristol Splash", away: "Naugatuck Thunderfish", venue: "Dennis Malone Aquatics Center" },
   { date: "Sat, Nov 21", warmup: "10:30 AM", home: "Oxford Otters", away: "JCC Blue Marlins", venue: "Oxford High School" },
