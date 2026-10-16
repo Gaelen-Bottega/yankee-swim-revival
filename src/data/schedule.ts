@@ -7,20 +7,27 @@ export type Meet = {
 };
 
 export const SCHEDULE: Meet[] = [
+  // TBD Meets
+  { date: "TBD", warmup: "TBD", home: "Watertown Warriors", away: "Litchfield Area Swim Team", venue: "TBD" },
+  // November Meets
   { date: "Sat, Nov 7", warmup: "9:00 AM", home: "New Milford Barracuda's", away: ["Newtown Torpedoes", "Madison Racquet & Swim Club"], venue: "Higgins Aquatic Center" },
-  { date: "Sat, Nov 7", warmup: "8:00 AM", home: "Watertown Warriors", away: "JCC Blue Marlins", venue: "Watertown HS Natatorium" },
   { date: "Sat, Nov 21", warmup: "9:00 AM", home: "New Milford Barracuda's", away: "Litchfield Area Swim Team", venue: "Higgins Aquatic Center" },
   { date: "Sat, Nov 21", warmup: "1:30 PM", home: "Bristol Splash", away: "Naugatuck Thunderfish", venue: "Dennis Malone Aquatics Center" },
   { date: "Sat, Nov 21", warmup: "10:30 AM", home: "Oxford Otters", away: "JCC Blue Marlins", venue: "Oxford High School" },
+  // December Meets
   { date: "Sat, Dec 5", warmup: "11:30 AM", home: "Naugatuck Thunderfish", away: "Oxford Otters", venue: "Naugatuck High School" },
   { date: "Sat, Dec 5", warmup: "1:30 PM", home: "Bristol Splash", away: "JCC Blue Marlins", venue: "Dennis Malone Aquatics Center" },
   { date: "Sat, Dec 12", warmup: "1:30 PM", home: "Bristol Splash", away: "Oxford Otters", venue: "Dennis Malone Aquatics Center" },
+  { date: "Sat, Dec 12", warmup: "8:00 AM", home: "Newtown Torpedoes", away: "Litchfield Area Swim Team", venue: "Newtown High School" },
+  { date: "Sat, Dec 19", warmup: "10:00 AM", home: "Watertown Warriors", away: "JCC Blue Marlins", venue: "Watertown HS Natatorium" },
+  // January Meets
   { date: "Sat, Jan 9", warmup: "11:30 AM", home: "Naugatuck Thunderfish", away: "JCC Blue Marlins", venue: "Naugatuck High School" },
   // Fix below
-  { date: "Sat, Jan 9", warmup: "TBD", home: "Plainville Swim Club", away: "Madison Racquet & Swim Club", venue: "Plainville High School" },
+  { date: "Sat, Jan 9", warmup: "1:30 PM", home: "Plainville Swim Club", away: ["Litchfield Area Swim Team", "Madison Racquet & Swim Club"], venue: "Plainville High School" },
   { date: "Sat, Jan 16", warmup: "TBD", home: "Watertown Warriors", away: "Bristol Splash", venue: "Watertown HS Natatorium" },
   { date: "Sat, Jan 16", warmup: "9:00 AM", home: "Plainville Swim Club", away: ["New Milford Barracuda's", "JCC Blue Marlins"], venue: "Plainville High School" },
   { date: "Sat, Jan 23", warmup: "1:30 PM", home: "Bristol Splash", away: ["Plainville Swim Club", "Newtown Torpedoes"], venue: "Dennis Malone Aquatics Center" },
+  { date: "Sat, Jan 23", warmup: "TBD", home: "Oxford Otters", away: "Litchfield Area Swim Team", venue: "Oxford High School" },
   { date: "Sat, Jan 30", warmup: "1:30 PM", home: "Bristol Splash", away: "Litchfield Area Swim Team", venue: "Dennis Malone Aquatics Center" },
   // Fix below
   { date: "Sat, Jan 30", warmup: "TBD", home: "Plainville Swim Club", away: "Madison Racquet & Swim Club", venue: "Plainville High School" },
